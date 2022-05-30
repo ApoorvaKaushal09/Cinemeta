@@ -1,6 +1,6 @@
 # Cinémeta
 
-## The-Movie-Recommender
+## [The-Movie-Recommender](https://cinemeta-recommender.herokuapp.com)
 
 ## Content-Based-Movie-Recommender-System-with-sentiment-analysis
 
@@ -8,6 +8,11 @@
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
+
+
+
+# [Here is the link to the live demo of my app(deployed app)](https://cinemeta-recommender.herokuapp.com)
+
 
 This application provides all the details of the requested movie such as overview, genre, release date, rating, runtime, top cast, reviews, recommended movies, etc.
 
