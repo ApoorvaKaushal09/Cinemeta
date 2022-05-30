@@ -32,19 +32,20 @@ Cosine similarity is a metric used to measure how similar the documents are irre
 ## How to run the project?
 
 #### 1. Clone this repository in your local system.
-#### 2. Install all the libraries mentioned in the [requirements.txt] file with the command 
+#### 2. Download the credits.csv and movies_metadata.csv from [THE MOVIE DATASET FROM KAGGLE](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset)
+#### 3. Install all the libraries mentioned in the [requirements.txt] file with the command 
 ```bash
 pip install -r requirements.txt
 ```
-#### 3. If you have problem installing the requirements then first set up a virtual environment and then install requirements
+#### 4. If you have problem installing the requirements then first set up a virtual environment and then install requirements
 ```bash
 python -m venv venv
 source venv/bin/activate (FOR mac)
 ```
 
-#### 4. Open your terminal/command prompt from your project directory and run the `main.py` file by executing the command
+#### 5. Open your terminal/command prompt from your project directory and run the `main.py` file by executing the command
 ```bash
 python main.py
 ```
-#### 5. Go to your browser and type `http://127.0.0.1:5000/` in the address bar.
-#### 6. Hurray! That's it.
+#### 6. Go to your browser and type `http://127.0.0.1:5000/` in the address bar.
+#### 7. Hurray! That's it.
