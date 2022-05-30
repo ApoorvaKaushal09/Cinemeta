@@ -16,6 +16,8 @@ Content Based Recommender System recommends movies similar to the movie user lik
 Don't worry if the movie that you are looking for is not auto-suggested. Just type the movie name and click on "enter". You will be good to go even though if you made some typo errors.
 
 
+# This app contains movie dataset till the year 2020
+
 ## Similarity Score :
 How does it decide which item is most similar to the item user likes? Here come the similarity scores.
 
