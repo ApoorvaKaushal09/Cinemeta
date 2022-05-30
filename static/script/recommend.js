@@ -1,4 +1,5 @@
 $(function() {
+  
   // Button will be disabled until we type something inside the input field
   const source = document.getElementById('autoComplete');
   const inputHandler = function(e) {
@@ -37,6 +38,8 @@ $(function() {
   });
 });
 
+
+
 // will be invoked when clicking on the recommended movie cards
 function recommendcard(e){
   $("#loader").fadeIn();
@@ -44,6 +47,8 @@ function recommendcard(e){
   var title = e.getAttribute('title'); 
   load_details(my_api_key,title);
 }
+
+
 
 
 // get the details of the movie from the API (based on the name of the movie)
@@ -104,6 +109,8 @@ function load_details(my_api_key,title){
   });
 }
 
+
+
 // getting closest match to the requested movie name using Levenshtein distance
 function similarity(s1, s2) {
   var longer = s1;
@@ -146,6 +153,8 @@ function editDistance(s1, s2) {
   return costs[s2.length];
 }
 
+
+
 // get all the details of the movie using the movie id.
 function get_movie_details(movie_id,my_api_key,movie_title,movie_title_org) {
   $.ajax({
@@ -160,6 +169,8 @@ function get_movie_details(movie_id,my_api_key,movie_title,movie_title_org) {
     },
   });
 }
+
+
 
 // passing all the details to python's flask for displaying and scraping the movie reviews using imdb id
 function show_details(movie_details,movie_title,my_api_key,movie_id,movie_title_org){
@@ -245,6 +256,8 @@ function show_details(movie_details,movie_title,my_api_key,movie_id,movie_title_
   });
 }
 
+
+
 // getting the details of individual cast
 function get_individual_cast(movie_cast,my_api_key) {
     cast_bdays = [];
@@ -274,6 +287,8 @@ function get_individual_cast(movie_cast,my_api_key) {
     }
     return {cast_bdays:cast_bdays,cast_bios:cast_bios,cast_places:cast_places};
   }
+
+
 
 // getting the details of the cast for the requested movie
 function get_movie_cast(movie_id,my_api_key){
@@ -315,6 +330,8 @@ function get_movie_cast(movie_id,my_api_key){
 
     return {cast_ids:cast_ids,cast_names:cast_names,cast_chars:cast_chars,cast_profiles:cast_profiles};
   }
+
+
 
   // getting recommendations
   function get_recommendations(movie_id, my_api_key) {
