@@ -37,6 +37,7 @@
 
   <body id="content">
 
+    <!--     Details of the movie -->
     <div class="container" style="margin: 100px;">
       <div class="results">
           <center>
@@ -73,12 +74,17 @@
     </div>  
     <br/>
 
+    
+    
+    <!--     Cast Button -->
     <center class="container">
       <figcaption >
         <button class="card-btn btn btn-info"><a  href="#CAST" style="  text-decoration: none;   color: white;"> Click to know more about the cast and the movie reviews </a></button>
       </figcaption>
     </center>
 
+    
+    <!--     Recommended Movies -->
     {% if movie_cards|length > 1 %}
       <div class="container" style="margin-top:150px">
         
@@ -89,6 +95,9 @@
           </center>
         </div>
         
+        
+        
+        <!--         Recommended Movie Cards -->
         <div class="movie-content">
           {% for poster, details in movie_cards.items() if not movie_cards.hidden %}
             
@@ -124,7 +133,7 @@
 
 
 
-    
+    <!--     Individual Cast details -->
     {% for name, details in cast_details.items() if not cast_details.hidden %}
       <div class="modal fade" id="{{details[0]}}" tabindex="-1" role="dialog" 
       aria-labelledby="exampleModalLabel3" aria-hidden="true">
@@ -166,6 +175,9 @@
         
     {% endfor %}
 
+    
+    
+    <!--     Top Cast -->
     <div class="container" id="CAST" >
 
       {% if casts|length > 1 %}
@@ -177,6 +189,8 @@
         </div>
 
       
+      
+        <!--         Cast Cards -->
         <div class="movie-content">
           {% for name, details in casts.items() if not casts.hidden %}
             <div class="castcard card" style="width: 14rem;" title="Click to know more about {{name}}"
@@ -201,6 +215,11 @@
       {% endif %}
       <br/>
 
+      
+      
+      
+      
+      <!--       Top Movie Review -->
       <center>
         <div class="container" style="margin-top: 100px;">
           {% if reviews %}
